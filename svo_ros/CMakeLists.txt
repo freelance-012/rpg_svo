@@ -28,7 +28,7 @@ FIND_PACKAGE(catkin REQUIRED COMPONENTS
   visualization_msgs
   sensor_msgs
   image_transport
-  cv_bridge
+  # cv_bridge
   tf
   svo
   svo_msgs
@@ -66,6 +66,7 @@ LIST(APPEND LINK_LIBS
   ${Sophus_LIBRARIES}
   ${Boost_LIBRARIES}
   ${catkin_LIBRARIES}
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/libcv_bridge_1.so
 )
 
 # Create visualizer library
